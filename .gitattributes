@@ -1,0 +1,18 @@
+#https://help.github.com/en/github/using-git/configuring-git-to-handle-line-endings
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text eol=lf
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.docx text=auto
+
+# Declare files that will always have LF line endings on checkout.
+*.txt text eol=lf
+*.ann text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.xlsx binary
+*.xls binary
+*.png binary
+*.jpg binary
+*.pdf binary
